@@ -5,7 +5,8 @@ from django.test import SimpleTestCase
 
 from app import calc
 
-class calcTests(SimpleTestCase):
+
+class CalcTests(SimpleTestCase):
     """Test the calc mocule."""
 
     def test_add_numbers(self):
@@ -19,4 +20,3 @@ class calcTests(SimpleTestCase):
         res = calc.subtract(5, 6)
 
         self.assertEqual(res, -1)
-
